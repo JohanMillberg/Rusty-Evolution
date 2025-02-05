@@ -1,0 +1,16 @@
+# Ignore build artifacts
+/target/
+**/*.rs.bk
+
+# Ignore local environment files
+.env
+.env.local
+
+# Ignore Rustfmt configuration file
+rustfmt.toml
+
+# Ignore Clippy configuration file
+.clippy.toml
+
+# Ignore debug and release builds
+debug/
