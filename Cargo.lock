@@ -4,6 +4,15 @@ version = 4
 
 [[package]]
 name = "approx"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3f2a05fd1bd10b2527e20a2cd32d8873d115b8b39fe219ee25f42a8aca6ba278"
+dependencies = [
+ "num-traits",
+]
+
+[[package]]
+name = "approx"
 version = "0.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cab112f0a86d568ea0e627cc1d6be74a1e9cd55214684db5561995f6dad897c6"
@@ -51,6 +60,7 @@ dependencies = [
 name = "lib-genetic-algorithm"
 version = "0.1.0"
 dependencies = [
+ "approx 0.4.0",
  "rand",
  "rand_chacha",
 ]
@@ -59,7 +69,7 @@ dependencies = [
 name = "lib-neural-network"
 version = "0.1.0"
 dependencies = [
- "approx",
+ "approx 0.5.1",
  "rand",
  "rand_chacha",
 ]
